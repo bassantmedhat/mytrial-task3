@@ -7,7 +7,10 @@
 - const size for static array
 ### const for declare pointer 
 - this pointer points to const variable
--- as ex :const int* u;
+- as ex :
+```
+const int* u;
+```
 ### const member function
 - this makes function read only
 - and const keyworld is required in both declaration and the definition.
