@@ -24,17 +24,20 @@ const int* u;\\ pointsto const int variable
 ````
 ```
 class Date
+```
 {
 public:
    Date( int mn, int dy, int yr );
+   
    int getMonth() const;  
    // A read-only function
-   void setMonth( int mn );   
+   void setMonth( int mn );
+   
    // A write function; can't be const
 private:
    int month;
 };
-
+```
 int Date::getMonth() const
 {
    return month;      
@@ -45,6 +48,7 @@ void Date::setMonth( int mn )
    month = mn;        
    // Modifies data member
 }
+
 int main()
 {
    Date MyDate( 7, 4, 1998 );
