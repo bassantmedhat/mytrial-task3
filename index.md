@@ -8,17 +8,22 @@
 ### const for declare pointer 
 - this pointer points to const variable
 - as ex :
+````
 ```
 const int* u;
 ```
+````
 ### const member function
 - this makes function read only
 - and const keyworld is required in both declaration and the definition.
 - as example
+````
 ```
 void f(const int i)
 ```
+````
 - another example:
+````
 ```
 class Date
 {
@@ -47,15 +52,48 @@ int main()
    BirthDate.setMonth( 4 ); //   makes Error
 }
 ```
+````
 ### used in making class object constant
 - as ex:
+````
 ```
 const class_name object;
 ```
+````
 ## & usage
-- get the value that the pointer points to
+- get the value that the pointer points to ///?
 - get the address of variable to store it in pointer
+````
+```
+int a;
+int*ptr =& a;
+```
+````
 - used in methods by passing variable by refrence in the parameters
-- other name of the same thing 
+````
+```
+return_typefunction_name(& variable_name)//in this we can get the value returned from function to be stored in the refrence of the passed variable
+```
+````
+
+- other name of the same thing //?
+````
+```
+```
+````
 - used as bitwise and that it compare each bit of the first operand to that bit of the second operand
+````
+```
+ short a = 0x5555;
+ short b = 0xAAAA;
+cout<<(a&b);
+```
+````
 - the symbol && means logical and
+````
+```
+if(codition 1 && condition 2){
+\\\do something
+}
+```
+````
