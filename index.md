@@ -21,10 +21,8 @@ const int* u;\\ pointsto const int variable
 - this makes function read only
 - and const keyworld is required in both declaration and the definition.
 - example:
-````
 ```
 class Date
-```
 {
 public:
    Date( int mn, int dy, int yr );
@@ -38,17 +36,21 @@ private:
    int month;
 };
 ```
+```
 int Date::getMonth() const
 {
    return month;      
    // Doesn't modify anything
 }
+```
+```
 void Date::setMonth( int mn )
 {
    month = mn;        
    // Modifies data member
 }
-
+```
+```
 int main()
 {
    Date MyDate( 7, 4, 1998 );
@@ -66,7 +68,6 @@ int main()
 }
 
 ```
-````
 ### used in making constant class object 
 - as ex:
 ````
