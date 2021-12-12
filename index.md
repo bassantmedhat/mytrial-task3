@@ -3,7 +3,7 @@
 ### const for declaring variables 
 - fix thier memory at compile time and donot change during run time
 - as object_name.set(value)
---  this value is const parameter
+- this value is const parameter
 - const size for static array
 ### const for declare pointer 
 - this pointer points to const variable
