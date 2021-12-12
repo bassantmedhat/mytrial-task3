@@ -22,17 +22,17 @@ const int* u;\\ pointsto const int variable
 - and const keyworld is required in both declaration and the definition.
 - example:
 ```C++
-class Date
-```
-{
+class Date{
 public:
+
    Date( int mn, int dy, int yr );
-   
-   int getMonth() const;  
-   // A read-only function
-   void setMonth( int mn );
-   
-   // A write function; can't be const
+   ```
+   int getMonth() const;   // A read-only function
+  ```
+  ```
+   void setMonth( int mn );  // A write function; can't be const
+   ```
+   ```
 private:
    int month;
 };
