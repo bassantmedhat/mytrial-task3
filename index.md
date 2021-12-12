@@ -21,8 +21,9 @@ const int* u;\\ pointsto const int variable
 - this makes function read only
 - and const keyworld is required in both declaration and the definition.
 - example:
-```
+```C++
 class Date
+```
 {
 public:
    Date( int mn, int dy, int yr );
