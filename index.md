@@ -39,16 +39,20 @@ private:
 ```
 ```
 int Date::getMonth() const
+```
 {
-   return month;      
-   // Doesn't modify anything
-}
+```
+   return month;       // Doesn't modify anything
+```
+   }
 ```
 ```
 void Date::setMonth( int mn )
+```
 {
-   month = mn;        
-   // Modifies data member
+```
+   month = mn;         // Modifies data member
+```
 }
 ```
 ```
