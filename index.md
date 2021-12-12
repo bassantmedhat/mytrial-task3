@@ -44,11 +44,16 @@ void Date::setMonth( int mn )
 int main()
 {
    Date MyDate( 7, 4, 1998 );
+   
    const Date BirthDate( 1, 18, 1953 );
+   
    MyDate.setMonth( 4 );    // Okay no error
+   
    BirthDate.getMonth();    // Okay no error
+   
    BirthDate.setMonth( 4 ); //   makes Error
 }
+
 ```
 ````
 ### used in making constant class object 
