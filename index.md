@@ -27,19 +27,23 @@ class Date
 {
 public:
    Date( int mn, int dy, int yr );
-   int getMonth() const;     // A read-only function
-   void setMonth( int mn );   // A write function; can't be const
+   int getMonth() const;  
+   // A read-only function
+   void setMonth( int mn );   
+   // A write function; can't be const
 private:
    int month;
 };
 
 int Date::getMonth() const
 {
-   return month;        // Doesn't modify anything
+   return month;      
+   // Doesn't modify anything
 }
 void Date::setMonth( int mn )
 {
-   month = mn;          // Modifies data member
+   month = mn;        
+   // Modifies data member
 }
 int main()
 {
@@ -47,11 +51,14 @@ int main()
    
    const Date BirthDate( 1, 18, 1953 );
    
-   MyDate.setMonth( 4 );    // Okay no error
+   MyDate.setMonth( 4 );  
+   // Okay no error
    
-   BirthDate.getMonth();    // Okay no error
+   BirthDate.getMonth();   
+   // Okay no error
    
-   BirthDate.setMonth( 4 ); //   makes Error
+   BirthDate.setMonth( 4 );
+   // makes Error
 }
 
 ```
