@@ -2,27 +2,25 @@
 ## the usage of const in c++
 ### const for declaring variables 
 - fix thier memory at compile time and donot change during run time
-- as object_name.set(value)
-- this value is const parameter
-- const size for static array
+- as ex: 
+````
+```
+const int a =5;
+```
+````
+- the size of the static array is constant by default// example of const values
 ### const for declare pointer 
 - this pointer points to const variable
 - as ex :
 ````
 ```
-const int* u;
+const int* u;\\ pointsto const int variable
 ```
 ````
 ### const member function
 - this makes function read only
 - and const keyworld is required in both declaration and the definition.
-- as example
-````
-```
-void f(const int i)
-```
-````
-- another example:
+- example:
 ````
 ```
 class Date
@@ -53,16 +51,25 @@ int main()
 }
 ```
 ````
-### used in making class object constant
+### used in making constant class object 
 - as ex:
 ````
 ```
-const class_name object;
+const class_name my_object;
 ```
 ````
+### const in class data member
+````
+```
+class name {
+const int a;
+const string s;
+}
+```
+````
+
 ## & usage
-- get the value that the pointer points to ///?
-- get the address of variable to store it in pointer
+- get the address of variable to store it in a pointer
 ````
 ```
 int a;
@@ -72,13 +79,7 @@ int*ptr =& a;
 - used in methods by passing variable by refrence in the parameters
 ````
 ```
-return_typefunction_name(& variable_name)//in this we can get the value returned from function to be stored in the refrence of the passed variable
-```
-````
-
-- other name of the same thing //?
-````
-```
+return_type function_name(&variable_name)//in this we can get the value returned from function to be stored in the refrence of the passed variable
 ```
 ````
 - used as bitwise and that it compare each bit of the first operand to that bit of the second operand
